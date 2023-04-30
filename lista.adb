@@ -43,13 +43,13 @@ package body Lista is
    end Esta;
    
    procedure Insertar(Lista: in out Tipolista; Elem: Tipoelemento) is
-      Nuevonodo:Tipolista:=new Tiponodo'(Elem, null);
+      Nuevonodo:Tipolista:=new Tiponodo'(Elem, null); -- Se crea una variable tipolista y se asigna la direccion de memoria a un puntero y se guarda en esa direccion un nodo.
    begin
       if Vacia(Lista) then Lista:=Nuevonodo;
       else Nuevonodo.Sig:=Lista;
          Lista:=Nuevonodo;
       end if;
-   end Insertar;
+   end Insertar; -- Se le asigna al primer puntero que apunta a null (vacio) o al siguiente nuevonodo. 
    
    procedure Insertarfinal(Lista:in out Tipolista; Elem: in Tipoelemento) is
       Nuevonodo:Tipolista:=new Tiponodo;
