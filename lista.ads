@@ -31,3 +31,4 @@ generic
          
       end lista;
 --package Listainc is new Lista(Tiporegistro);
+--
