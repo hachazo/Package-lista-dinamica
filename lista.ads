@@ -8,9 +8,9 @@ generic
          
          function Vacia(Lista: Tipolista) return Boolean;
          function Esta(Lista: Tipolista; Elem: Tipoelemento) return Boolean;
-     
+		 
+		 procedure Crear (Lista: out TipoLista);
          procedure Insertar(Lista: in out Tipolista; Elem: in Tipoelemento);
-         procedure Insertarfinal(Lista: in out Tipolista; Elem: in Tipoelemento);
          procedure Suprimir(Lista: in out Tipolista; Elem: Tipoelemento);
          procedure Limpiar(Lista: in out Tipolista);
          
@@ -30,5 +30,6 @@ generic
          end record;
          
       end lista;
---package Listainc is new Lista(Tiporegistro);
---
+-- package Listainc is new Lista(Tiporegistro);
+-- use Listainc;
+-- Lista:Tipolista;

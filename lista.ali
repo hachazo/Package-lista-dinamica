@@ -1,0 +1,40 @@
+V "GNAT Lib v3.15"
+A -gnatwu
+A -gnatX
+A -gnatc
+P NO
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U lista%s		lista.ads		3dfe73be EE PK GE
+
+D lista.ads		20230508003520 3dfe73be
+X 1 lista.ads
+3+9 Tipoelemento 10r48 13r63 14r60 17r49 28r19
+5k12*Lista 32l11 32e16
+7P12 Tipolista 9r32 10r31 12r46 13r43 14r43 15r42 17r31 18r30 18r48 25c15
+. 29r18
+9V19 Vacia{boolean}
+9P25 Lista{7P12}
+10V19 Esta{boolean}
+10P24 Lista{7P12}
+10+42 Elem{3+9}
+12U28 Crear
+12P35 Lista{7P12}
+13U20 Insertar
+13P29 Lista{7P12}
+13+54 Elem{3+9}
+14U20 Suprimir
+14P29 Lista{7P12}
+14+54 Elem{3+9}
+15U20 Limpiar
+15P28 Lista{7P12}
+17V19 Info{3+9}
+17P24 Lista{7P12}
+18V19 Sig{7P12}
+18P23 Lista{7P12}
+20X10 Listavacia
+24R15 tiponodo 25r35 27c15
+27R15 Tiponodo 30e20
+28+13 Info{3+9}
+29P13 Sig{7P12}
+
