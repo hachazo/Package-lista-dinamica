@@ -51,6 +51,23 @@ package body Lista is
       end if;
    end Insertar; -- Se le asigna al primer puntero que apunta a null (vacio) o al siguiente nuevonodo. 
    
+     procedure Insertarfinal(Lista:in out Tipolista; Elem: in Tipoelemento) is
+      Nuevonodo:Tipolista:=new Tiponodo;
+      Ant, Ptr:Tipolista;
+   begin
+      Nuevonodo.Info:=Elem;
+      Nuevonodo.Sig:=null;
+      if Vacia(Lista) then Lista:=Nuevonodo;
+      else
+         Ptr:=Lista;
+         Ant:=null;
+         while Ptr/=null loop
+            Ant:=Ptr;
+            Ptr:=Ptr.Sig;
+         end loop;         
+      end if;      
+   end Insertarfinal;
+   
    function Sig(Lista: Tipolista) return Tipolista is
    begin
       if Vacia(Lista) then raise Listavacia;
