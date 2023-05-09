@@ -11,6 +11,7 @@ generic
 		 
 		 procedure Crear (Lista: out TipoLista);
          procedure Insertar(Lista: in out Tipolista; Elem: in Tipoelemento);
+		 procedure Insertarfinal(Lista:in out Tipolista; Elem: in Tipoelemento);
          procedure Suprimir(Lista: in out Tipolista; Elem: Tipoelemento);
          procedure Limpiar(Lista: in out Tipolista);
          
