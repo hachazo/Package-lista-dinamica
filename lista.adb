@@ -22,6 +22,11 @@ package body Lista is
       return Lista=null;
    end Vacia;
    
+   procedure crear (Lista: out Tipolista) is
+	begin
+		Lista:= null;
+	end crear;
+	
    function Info(Lista: Tipolista) return Tipoelemento is
    begin
       if Lista/=null then return Lista.Info;
